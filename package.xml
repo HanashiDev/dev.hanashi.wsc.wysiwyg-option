@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="dev.hanashi.wsc.template1" xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/package.xsd">
+<package name="dev.hanashi.wsc.wysiwyg-option" xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/package.xsd">
     <packageinformation>
-        <packagename><![CDATA[Template]]></packagename>
-        <packagename language="de"><![CDATA[Template]]></packagename>
-        <packagedescription><![CDATA[Template description.]]></packagedescription>
-        <packagedescription language="de"><![CDATA[Template-Beschreibung.]]></packagedescription>
+        <packagename><![CDATA[WYSIWYG Option]]></packagename>
+        <packagename language="de"><![CDATA[WYSIWYG-Option]]></packagename>
+        <packagedescription><![CDATA[Option for WYSIWYG editor.]]></packagedescription>
+        <packagedescription language="de"><![CDATA[Option für den WYSIWYG-Editor.]]></packagedescription>
         <version>1.0.0</version>
-        <date>2019-05-01</date>
+        <date>2019-06-03</date>
     </packageinformation>
 
     <authorinformation>
@@ -15,43 +15,22 @@
     </authorinformation>
 	
 	<compatibility>
+		<api version="2017" />
 		<api version="2018" />
 	</compatibility>
 
     <requiredpackages>
-        <requiredpackage minversion="3.1.9">com.woltlab.wcf</requiredpackage>
-        <!-- <requiredpackage minversion="5.1.9">com.woltlab.wbb</requiredpackage> -->
+        <requiredpackage minversion="3.0.0">com.woltlab.wcf</requiredpackage>
     </requiredpackages>
 
     <instructions type="install">
 		<!-- files -->
-        <!-- <instruction type="file" /> -->
+        <instruction type="file" />
 		
 		<!-- templates -->
-		<!-- <instruction type="template" /> -->
-		<!-- <instruction type="acpTemplate" /> -->
-		
-		<!-- language -->
-        <!-- <instruction type="language"/> -->
-		
-		<!-- listener -->
-        <!-- <instruction type="eventListener" /> -->
-		<!-- <instruction type="templateListener" /> -->
+		<instruction type="acpTemplate" />
 		
 		<!-- config -->
-        <!-- <instruction type="aclOption" /> -->
-        <!-- <instruction type="acpMenu" /> -->
-        <!-- <instruction type="userGroupOption" /> -->
-        <!-- <instruction type="cronjob" /> -->
-        <!-- <instruction type="objectType" /> -->
-        <!-- <instruction type="option" /> -->
-        <!-- <instruction type="page" /> -->
-        <!-- <instruction type="box" /> -->
-        <!-- <instruction type="userNotificationEvent" /> -->
-        <!-- <instruction type="sql" /> -->
+        <instruction type="objectType" />
     </instructions>
-	<instructions type="update" fromversion="1.0.0">
-		<!-- files -->
-        <!-- <instruction type="file" /> -->
-	</instructions>
 </package>
