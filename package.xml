@@ -5,23 +5,22 @@
         <packagename language="de"><![CDATA[WYSIWYG-Option]]></packagename>
         <packagedescription><![CDATA[Option for WYSIWYG editor.]]></packagedescription>
         <packagedescription language="de"><![CDATA[Option für den WYSIWYG-Editor.]]></packagedescription>
-        <version>1.0.0</version>
-        <date>2019-06-03</date>
+        <version>1.0.1</version>
+        <date>2021-07-19</date>
     </packageinformation>
 
     <authorinformation>
-        <author><![CDATA[Hanashi]]></author>
+        <author><![CDATA[Hanashi Development]]></author>
         <authorurl><![CDATA[https://hanashi.dev/]]></authorurl>
     </authorinformation>
-	
-	<compatibility>
-		<api version="2017" />
-		<api version="2018" />
-	</compatibility>
 
     <requiredpackages>
         <requiredpackage minversion="3.0.0">com.woltlab.wcf</requiredpackage>
     </requiredpackages>
+
+	<excludedpackages>
+		<excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
 
     <instructions type="install">
 		<!-- files -->
@@ -33,4 +32,8 @@
 		<!-- config -->
         <instruction type="objectType" />
     </instructions>
+	<instructions type="update" fromversion="1.0.0">
+		<!-- files -->
+        <instruction type="file" />
+	</instructions>
 </package>
