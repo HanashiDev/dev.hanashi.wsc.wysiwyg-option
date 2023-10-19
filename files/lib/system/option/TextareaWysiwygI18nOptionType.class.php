@@ -4,7 +4,6 @@ namespace wcf\system\option;
 
 use wcf\data\option\Option;
 use wcf\system\exception\UserInputException;
-use wcf\system\html\input\HtmlInputProcessor;
 use wcf\system\language\I18nHandler;
 use wcf\system\WCF;
 
@@ -24,8 +23,9 @@ class TextareaWysiwygI18nOptionType extends TextareaWysiwygOptionType
 
         WCF::getTPL()->assign([
             'option' => $option,
-            'value' => $value
+            'value' => $value,
         ]);
+
         return WCF::getTPL()->fetch('textareaWysiwygI18nOptionType');
     }
 

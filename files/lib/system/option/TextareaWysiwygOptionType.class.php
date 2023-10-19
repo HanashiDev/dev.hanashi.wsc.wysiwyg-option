@@ -14,9 +14,10 @@ class TextareaWysiwygOptionType extends AbstractOptionType
     public function getFormElement(Option $option, $value)
     {
         WCF::getTPL()->assign([
-        'option' => $option,
-        'value' => $value
+            'option' => $option,
+            'value' => $value,
         ]);
+
         return WCF::getTPL()->fetch('textareaWysiwygOptionType');
     }
 
