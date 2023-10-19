@@ -1,39 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="dev.hanashi.wsc.wysiwyg-option" xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/package.xsd">
-    <packageinformation>
-        <packagename><![CDATA[WYSIWYG Option]]></packagename>
-        <packagename language="de"><![CDATA[WYSIWYG-Option]]></packagename>
-        <packagedescription><![CDATA[Option for WYSIWYG editor.]]></packagedescription>
-        <packagedescription language="de"><![CDATA[Option für den WYSIWYG-Editor.]]></packagedescription>
-        <version>1.0.1</version>
-        <date>2021-07-19</date>
-    </packageinformation>
-
-    <authorinformation>
-        <author><![CDATA[Hanashi Development]]></author>
-        <authorurl><![CDATA[https://hanashi.dev/]]></authorurl>
-    </authorinformation>
-
-    <requiredpackages>
-        <requiredpackage minversion="3.0.0">com.woltlab.wcf</requiredpackage>
-    </requiredpackages>
-
+<package xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/package.xsd" name="dev.hanashi.wsc.wysiwyg-option">
+	<packageinformation>
+		<!-- dev.hanashi.wsc.wysiwyg-option -->
+		<packagename>WYSIWYG Option</packagename>
+		<packagename language="de">WYSIWYG-Option</packagename>
+		<packagedescription>Option for WYSIWYG editor.</packagedescription>
+		<packagedescription language="de">Option für den WYSIWYG-Editor.</packagedescription>
+		<version>1.1.0</version>
+		<date>2023-10-19</date>
+	</packageinformation>
+	<authorinformation>
+		<author>Hanashi Development</author>
+		<authorurl>https://hanashi.dev/</authorurl>
+	</authorinformation>
+	<requiredpackages>
+		<requiredpackage minversion="6.0.0">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
 	<excludedpackages>
-		<excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+		<excludedpackage version="7.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
 	</excludedpackages>
-
-    <instructions type="install">
-		<!-- files -->
-        <instruction type="file" />
-		
-		<!-- templates -->
-		<instruction type="acpTemplate" />
-		
-		<!-- config -->
-        <instruction type="objectType" />
-    </instructions>
-	<instructions type="update" fromversion="1.0.0">
-		<!-- files -->
-        <instruction type="file" />
+	<instructions type="install">
+		<instruction type="file"/>
+		<instruction type="acpTemplate"/>
+		<instruction type="objectType"/>
+	</instructions>
+	<instructions type="update" fromversion="1.0.*">
+		<instruction type="file"/>
+		<instruction type="fileDelete"/>
+		<instruction type="acpTemplateDelete"/>
 	</instructions>
 </package>

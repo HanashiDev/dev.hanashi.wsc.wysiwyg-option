@@ -6,7 +6,7 @@ use wcf\data\option\Option;
 use wcf\system\html\input\HtmlInputProcessor;
 use wcf\system\WCF;
 
-class TextareaWysiwygOptionType extends AbstractOptionType
+final class TextareaWysiwygOptionType extends AbstractOptionType
 {
     /**
      * @inheritDoc
@@ -14,9 +14,10 @@ class TextareaWysiwygOptionType extends AbstractOptionType
     public function getFormElement(Option $option, $value)
     {
         WCF::getTPL()->assign([
-        'option' => $option,
-        'value' => $value
+            'option' => $option,
+            'value' => $value,
         ]);
+
         return WCF::getTPL()->fetch('textareaWysiwygOptionType');
     }
 
