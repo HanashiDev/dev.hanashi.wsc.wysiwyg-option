@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/6.0/package.xsd" name="dev.hanashi.wsc.wysiwyg-option">
+<package xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/package.xsd" name="dev.hanashi.wsc.wysiwyg-option">
 	<packageinformation>
 		<!-- dev.hanashi.wsc.wysiwyg-option -->
 		<packagename>WYSIWYG Option</packagename>
@@ -26,5 +26,7 @@
 	</instructions>
 	<instructions type="update" fromversion="1.0.*">
 		<instruction type="file"/>
+		<instruction type="fileDelete"/>
+		<instruction type="acpTemplateDelete"/>
 	</instructions>
 </package>
